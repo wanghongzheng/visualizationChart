@@ -1,0 +1,79 @@
+<html>
+<head>
+<meta chartset="utf-8">
+<title>可视化echarts图表</title>
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
+<link rel="stylesheet" href="./css/visualizedCharts.css"/>
+<link rel="stylesheet" href="./css/numbercss.css"/>
+</head>
+<body class="contains">
+	<div class="header">
+		<div class = "title" >数据可视化-Echarts</div>
+		<div class = "time" >当前时间：<label>2020-05-27 08:36:58</label></div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 item_left">
+				<div class="item_left_content">
+					<div class="industryChartDiv">
+						<div class="border">
+							<div id="industryBar"></div>
+						</div>
+					</div>
+					<div class="changeChartDiv" >
+						<div class="border">
+							<div id="changeLine"></div>
+						</div>
+					</div>
+					<div class="ageChartDiv">
+						<div class="border">
+								<div id="agePie"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 item_center">
+				<div class="item_center_content">
+					<div class="totalInfoDiv">
+						<div class="border" style="height: 90px;padding: 15px 0px;">
+							<div class="col-md-6 light" style="border-right: 1px solid #02a6b5;"><div id="requiredPeoples" class="digits">12588</div></div>
+							<div class="col-md-6 light"><div id="supplyPeoples" class="digits">9</div></div>
+						</div>
+						<div style="clear:both;">
+							<span  class="col-md-6" style="color:#fff;display: inline-block;font-size:18px;text-align: center;">前端需求人数</span>
+							<span class="col-md-6"  style="color:#fff;display: inline-block;font-size:18px;text-align: center;">市场供应人数</span>
+						</div>
+					</div>
+					<div class="moveMapDiv">
+						<div id="moveMapChart"></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 item_right">
+				<div class="item_right_content">
+					<div class="powerChartDiv">
+						<div class="border">
+							<div id="skillAcquisitionBar"></div>
+						</div>
+					</div>
+					<div class="playChatDiv">
+						<div class="border">
+							<div id="playCounts"></div>
+						</div>
+					</div>
+					<div class="areaChartDiv">
+						<div class="border">
+							<div id="roseChart"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="./js/echarts.min.js"></script>
+<script src="./js/china.js"></script>
+<script src="./js/visualizedCharts.js"></script>
+</html>
