@@ -16,20 +16,18 @@
 	 moveMapChart();
 	 clocknum(12588,'requiredPeoples'); //执行
 	 clocknum(104532,'supplyPeoples'); 
-	window.addEventListener("resize", () => { 
-		myChart1.resize();  
-		myChart2.resize();  
-		myChart3.resize();
-		myChart4.resize();  
-		myChart5.resize();  
-		myChart6.resize();
-		myChart7.resize();
-	});
+	/* $(".digits").numScroll({
+			time:5000
+	 });*/
+	  clocknum(12588,'requiredPeoples');
  });
  /**
  *	就业行业柱形图
  */
  function industryBar(){
+	var xAxisData = ['旅游行业', '电竞行业', '游戏行业', '影视行业', '电商行业', '医疗行业', '金融行业'];
+	var yAxisData = [200, 300, 300, 900, 1500, 1200, 600];
+	
 	myChart1 =  echarts.init(document.getElementById('industryBar'));	// 基于准备好的dom，初始化echarts实例
 	var option = {
 		title: {
@@ -54,7 +52,7 @@
 		xAxis: [
 			{
 				type: 'category',
-				data: ['旅游行业', '电竞行业', '游戏行业', '影视行业', '电商行业', '医疗行业', '金融行业'],
+				data: xAxisData,
 				axisTick: {
 					alignWithLabel: true
 				},
@@ -112,13 +110,14 @@
 					barBorderRadius: 11,
 				}
 			  },
-				data: [200, 300, 300, 900, 1500, 1200, 600]
+				data:yAxisData 
 			}
 		]
 	};
 	myChart1.setOption(option,true);	    // 使用刚指定的配置项和数据显示图表。
    var app = {
 	currentIndex: -1,
+	
   };
  setInterval(function () {
 	var dataLen = option.series[0].data.length;
@@ -144,6 +143,12 @@
 	  dataIndex: app.currentIndex
 	});
   }, 1000);
+  	$(document).ready(function(){
+	　　myChart1.resize();  
+	})
+	window.addEventListener("resize", function () {
+	　　myChart1.resize();  
+	});
 }
 
 /**
@@ -235,6 +240,12 @@ function changeChart(){
         }]
 	};
 	myChart2.setOption(option,true);	    // 使用刚指定的配置项和数据显示图表。
+	$(document).ready(function(){
+	　　myChart2.resize();  
+	})
+	window.addEventListener("resize", function () {
+	　　myChart2.resize();  
+	});
 }
  /**
  *饼形图-年龄分布
@@ -304,6 +315,12 @@ function changeChart(){
 		]
 	};
 	myChart3.setOption(option,true);	    // 使用刚指定的配置项和数据显示图表。
+	$(document).ready(function(){
+	　　myChart3.resize();  
+	})
+	window.addEventListener("resize", function () {
+	　　myChart3.resize();  
+	});
  }
  
  /**
@@ -412,6 +429,12 @@ function changeChart(){
 	}
 	myChart4 = echarts.init(document.getElementById('skillAcquisitionBar'));
 	myChart4.setOption(option,true);
+	$(document).ready(function(){
+	　　myChart4.resize();  
+	})
+	window.addEventListener("resize", function () {
+	　　myChart4.resize();  
+	});
 }
 
 /**
@@ -678,6 +701,12 @@ function playCounts(){
 	};
 	myChart5 = echarts.init(document.getElementById('playCounts'));
 	myChart5.setOption(option,true);
+	$(document).ready(function(){
+	　　myChart5.resize();  
+	})
+	window.addEventListener("resize", function () {
+	　　myChart5.resize();  
+	});
 }    
 
 /**
@@ -749,6 +778,12 @@ function roseChart(){
 	};
 	myChart6 = echarts.init(document.getElementById('roseChart'));
 	myChart6.setOption(option);
+	$(document).ready(function(){
+	　　myChart6.resize();  
+	})
+	window.addEventListener("resize", function () {
+	　　myChart6.resize();  
+	});
 }
 
 /**
@@ -1045,6 +1080,12 @@ function moveMapChart(){
 	};
 	myChart7 = echarts.init(document.getElementById('moveMapChart'));
 	myChart7.setOption(option,true);
+	$(document).ready(function(){
+	　　myChart7.resize();  
+	})
+	window.addEventListener("resize", function () {
+	　　myChart7.resize();  
+	});
 }
 
 /**

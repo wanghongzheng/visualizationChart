@@ -1,4 +1,4 @@
-<html>
+<html style="font-size: 56.6px;">
 <head>
 <meta chartset="utf-8">
 <title>可视化echarts图表</title>
@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="./css/visualizedCharts.css"/>
 <link rel="stylesheet" href="./css/numbercss.css"/>
 </head>
-<body class="contains">
+<body class="contains" style="font-size: 56.6px;">
 	<div class="header">
 		<div class = "title" >数据可视化-Echarts</div>
 		<div class = "time" >当前时间：<label>2020-05-27 08:36:58</label></div>
@@ -36,16 +36,18 @@
 				<div class="item_center_content">
 					<div class="totalInfoDiv">
 						<div class="border" style="height: 90px;padding: 15px 0px;">
-							<div class="col-md-6 light" style="border-right: 1px solid #02a6b5;"><div id="requiredPeoples" class="digits">12588</div></div>
-							<div class="col-md-6 light"><div id="supplyPeoples" class="digits">9</div></div>
+							<div class="col-md-6 light" style="border-right: 1px solid #02a6b5;"><div id="requiredPeoples" class="digits" style="color:#fff;">888888</div></div>
+							<div class="col-md-6 light"><div id="supplyPeoples" class="digits">888888</div></div>
 						</div>
-						<div style="clear:both;">
+						<div style="clear:both; margin-top: 30px;">
 							<span  class="col-md-6" style="color:#fff;display: inline-block;font-size:18px;text-align: center;">前端需求人数</span>
 							<span class="col-md-6"  style="color:#fff;display: inline-block;font-size:18px;text-align: center;">市场供应人数</span>
 						</div>
 					</div>
 					<div class="moveMapDiv">
-						<div id="moveMapChart"></div>
+						<div class="moveMapDiv1" style=""><img src="./images/centerbg3.png" style="border: none; max-width: 100%;"> </div>
+						<div id="moveMapChart">
+						</div>
 					</div>
 				</div>
 			</div>
@@ -75,5 +77,7 @@
 <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="./js/echarts.min.js"></script>
 <script src="./js/china.js"></script>
+<script src="./js/jquery.numscroll.js"></script>
 <script src="./js/visualizedCharts.js"></script>
+
 </html>
