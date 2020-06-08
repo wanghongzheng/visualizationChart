@@ -8,7 +8,7 @@
 .item_left_content,.item_center_content,.item_right_content{display: flex;flex-direction: column;align-content: stretch;justify-content: stretch;width: 100%;}
 .industryChartDiv,.changeChartDiv,.ageChartDiv,.powerChartDiv,.playChatDiv,.areaChartDiv{flex:1;margin: 10px 0px;}
 .totalInfoDiv{flex: 1;margin: 10px 0px;background: #0a1446;padding: 10px;}
-.moveMapDiv1{position: absolute;font-size: 56.6px;width: 8.43rem; z-index: 2;animation: myfirst2 15s infinite linear;overflow:hidden;}
+.moveMapDiv1{position: absolute;font-size: 56.6px;width: 8.03rem; z-index: 2;animation: myfirst2 15s infinite linear;overflow:hidden;}
 .moveMapDiv{flex:4;margin: 10px 0px;display: flex;justify-content: center;justify-content: center;align-items: center;}
 .industryChartDiv,.powerChartDiv,.changeChartDiv,.ageChartDiv,.playChatDiv,.areaChartDiv{background:#08113e url('../images/partbg1.png');background-repeat: repeat;
     background-position: center;}
